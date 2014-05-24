@@ -1,5 +1,49 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html
+    head
+        title= title
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        // Bootstrap core CSS
+        link(rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+        script(src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
+        link(rel='stylesheet', href='/stylesheets/home.css')
+    body
+        div(class='site-wrapper')
+            div(class='site-wrapper-inner')
+                div(class='cover-container')
+                    div(class='masthead clearfix')
+                        div(class='inner')
+                            h3(class='masthead-brand') Alexly
+                            ul(class='nav masthead-nav')
+                                li(class='active')
+                                    a(href='#') Home
+                                li
+                                    a(href='#') Blog
+                                li
+                                    a(href='#') Project
+                    div(class='inner cover')
+                        h3(style='margin-bottom:40px;') Hi, I'm Alex, a daydreamer.
+                        ul(class='timeline')
+                            li
+                                div(class='timeline-badge success') 2012
+                                div(class='timeline-panel')
+                                    div(class='timeline-heading')
+                                        h4(class='timeline-title')  Google Shanghai
+                            li(class='timeline-inverted')
+                                div(class='timeline-badge warning') 2005
+                                div(class='timeline-panel')
+                                    div(class='timeline-heading')
+                                        h4(class='timeline-title') Tianjin University
+                            li
+                                div(class='timeline-badge danger') 1987
+                                div(class='timeline-panel')
+                                    div(class='timeline-heading')
+                                        h4(class='timeline-title') Born
+                    div(class='mastfoot')
+                        div(class='inner')
+                            Copyright 2014 May. All rights reserved.
+        // Placed at the end of the document so the pages load faster
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+        script(src='../../dist/js/bootstrap.min.js')
